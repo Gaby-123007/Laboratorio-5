@@ -132,15 +132,41 @@ Componentes de baja frecuencia (< 0.5 Hz), asociadas a la deriva de línea base.
 
 Componentes de alta frecuencia (> 40 Hz), debidas al ruido eléctrico y muscular (EMG).
 
+<img width="625" height="348" alt="image" src="https://github.com/user-attachments/assets/6e574c2d-3f09-4ae6-8019-316bb7ebbd14" />
 
+El filtrado permitió obtener una señal ECG limpia, conservando las morfologías P, QRS y T con mínima distorsión.
 
+2. Detección de picos R
 
+Una vez filtrada la señal, se aplicó un algoritmo de detección de picos basado en la función find_peaks() de scipy.signal, la cual permite localizar máximos locales cumpliendo condiciones de amplitud mínima y distancia temporal mínima entre picos.
 
+<img width="982" height="143" alt="image" src="https://github.com/user-attachments/assets/c02781bf-79c9-4351-9721-504f325f3d0f" />
 
+El parámetro distance=FS*0.6 asegura que no se detecten picos falsos dentro del mismo complejo QRS (equivale a un máximo fisiológico de 100 BPM).
 
+El height se calcula dinámicamente a partir de la media y desviación estándar de la señal, para adaptarse a distintos niveles de amplitud.
 
+3. Cálculo de los intervalos R-R
 
+Con las posiciones de los picos R detectados, se calcularon los intervalos R-R en segundos como la diferencia temporal entre picos consecutivos:
 
+<img width="976" height="134" alt="image" src="https://github.com/user-attachments/assets/d55fc458-82b3-452a-a9b7-f499306ac7ae" />
 
+Estos intervalos representan la variabilidad instantánea de la frecuencia cardíaca.
+A partir de ellos, se obtiene una serie temporal irregular que luego será interpolada para el análisis con la transformada Wavelet.
+
+4. Resultados del preprocesamiento
+
+El resultado del preprocesamiento fue una señal ECG filtrada, sin ruido de línea base ni interferencias, con los picos R correctamente identificados y listos para el análisis de HRV.
+
+La siguiente figura ilustra el proceso completo:
+
+ECG original (ruidoso)
+
+ECG filtrado con picos R detectados
+
+Serie de intervalos R-R
+
+RR interpolado para análisis de frecuencia
 
 
