@@ -193,4 +193,8 @@ La serie interpolada (línea roja discontinua) conserva la tendencia de la seña
 La Transformada Wavelet se aplicó a la serie de intervalos R–R interpolada para analizar la variabilidad de la frecuencia cardiaca en el dominio tiempo-frecuencia. Esta herramienta permite observar cómo cambian las componentes de baja frecuencia (LF: 0.04–0.15 Hz), asociadas a la actividad simpática, y las de alta frecuencia (HF: 0.15–0.4 Hz), relacionadas con la modulación parasimpática.
 En el espectrograma se aprecia mayor potencia en la banda LF, lo que indica una ligera predominancia simpática, mientras que las componentes HF reflejan la influencia respiratoria normal. La relación LF/HF ≈ 1.6 sugiere un equilibrio autonómico estable, mostrando que la Transformada Wavelet describe de forma efectiva las variaciones dinámicas del sistema nervioso autónomo a lo largo del tiempo.
 
+# Conclusion
+El análisis realizado permitió caracterizar la variabilidad de la frecuencia cardíaca (HRV) a partir de una señal ECG real mediante filtrado, detección de picos R y aplicación de la Transformada Wavelet. Los resultados mostraron una media RR de 0.913 s, SDNN de 0.068 s y una frecuencia cardíaca promedio de 66.1 bpm, indicando un ritmo sinusal estable y una variabilidad moderada.
+El análisis tiempo–frecuencia evidenció una mayor potencia en la banda LF (0.8111) frente a la HF (0.0802), con una relación LF/HF ≈ 10.1, lo que refleja un predominio simpático y una posible respuesta de alerta del sistema nervioso autónomo.
+En conclusión, la Transformada Wavelet permitió observar de manera dinámica la interacción entre las ramas simpática y parasimpática, demostrando su eficacia como herramienta para el estudio del control autonómico del corazón.
 
