@@ -119,6 +119,19 @@ Se evitó la proximidad de fuentes de ruido electromagnético (celulares, monito
 
 ![image](https://github.com/user-attachments/assets/4580bdea-f575-46fa-8ea0-8af3424bc487)
 
+# Preprocesamiento de la señal 
+
+1. Filtrado digital paso banda
+
+La señal ECG original fue obtenida de un archivo de texto (señal ecg 1 Gaby.txt) y muestreada a 1000 Hz.
+Posteriormente, se aplicó un filtro paso banda Butterworth de cuarto orden (IIR) con frecuencias de corte en 0.5 Hz y 40 Hz, diseñado con la función butter() de la librería scipy.signal.
+
+El filtro atenúa:
+
+Componentes de baja frecuencia (< 0.5 Hz), asociadas a la deriva de línea base.
+
+Componentes de alta frecuencia (> 40 Hz), debidas al ruido eléctrico y muscular (EMG).
+
 
 
 
