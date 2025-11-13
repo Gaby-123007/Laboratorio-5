@@ -29,7 +29,7 @@ import xlsxwriter
 # =========================
 # PARÁMETROS
 # =========================
-RUTA_ARCHIVO = r"C:\Users\Gabriela\Downloads\señal ecg 1 gimena .txt"  # Cambia la ruta si es necesario
+RUTA_ARCHIVO = r"C:\Users\Gabriela\Documents\Laboratorio ultimo\señal ecg 1 Gaby.txt" # Cambia la ruta si es necesario
 FS = 1000        # Frecuencia de muestreo de la señal ECG [Hz]
 LOWCUT = 0.5     # Frecuencia de corte baja [Hz]
 HIGHCUT = 40     # Frecuencia de corte alta [Hz]
