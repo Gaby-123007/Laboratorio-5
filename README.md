@@ -169,4 +169,14 @@ Serie de intervalos R-R
 
 RR interpolado para análisis de frecuencia
 
+# Resultados e interpretación 
+
+4. Análisis de la Variabilidad de la Frecuencia Cardíaca (HRV)
+
+A partir de la detección de los picos R en la señal ECG filtrada, se calcularon los intervalos R–R (RR), los cuales representan el tiempo entre latidos consecutivos.
+Estos intervalos permiten analizar la variabilidad de la frecuencia cardíaca (HRV) en el dominio del tiempo, un indicador del equilibrio entre las ramas simpática y parasimpática del Sistema Nervioso Autónomo (SNA).
+
+La media de los intervalos RR refleja el ritmo basal del corazón, mientras que la desviación estándar (SDNN) indica el grado de variabilidad de los latidos.
+En la gráfica de intervalos RR (serie verde), se observa una modulación suave y periódica que corresponde a una actividad autonómica normal.
+La serie interpolada (línea roja discontinua) conserva la tendencia de la señal original, validando el proceso de interpolación empleado.
 
