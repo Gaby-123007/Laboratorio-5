@@ -38,6 +38,88 @@ El análisis de HRV proporciona información valiosa sobre la regulación cardio
 
 <img width="750" height="337" alt="image" src="https://github.com/user-attachments/assets/35e33912-f2bf-426f-9942-3341f9d4d58d" />
 
+3. Transformada Wavelet
+
+La transformada Wavelet es una herramienta matemática utilizada para analizar señales no estacionarias, es decir, aquellas cuyos componentes de frecuencia cambian con el tiempo, como las señales biológicas.
+A diferencia de la Transformada de Fourier, la Wavelet permite obtener información simultáneamente en el dominio del tiempo y de la frecuencia, mediante el uso de funciones base denominadas wavelets madre.
+
+En el análisis de la HRV, la transformada Wavelet permite:
+
+Detectar variaciones transitorias en las bandas de baja frecuencia (LF) y alta frecuencia (HF).
+
+Evaluar la evolución temporal de la actividad simpática y parasimpática.
+
+Visualizar la potencia espectral mediante un escalograma o espectrograma Wavelet, que representa cómo cambia la energía de la señal en diferentes frecuencias a lo largo del tiempo.
+
+El uso de la Transformada Wavelet mejora la interpretación fisiológica de la HRV y complementa los análisis tradicionales en los dominios del tiempo y la frecuencia.
+
+# Adquisición de la señal ECG
+
+Para el desarrollo del laboratorio se realizó la adquisición de la señal electrocardiográfica (ECG) de un compañero en condiciones de reposo, con el fin de analizar la variabilidad de la frecuencia cardíaca (HRV).
+
+1. Instrumentación utilizada
+
+Electrodos de superficie: 3 electrodos colocados según la configuración estándar para derivación DI (brazo derecho, brazo izquierdo y pierna derecha como referencia).
+
+Sistema de adquisición: módulo de adquisición de datos compatible (BiTalino).
+
+Software de captura: aplicación de registro o script en Python.
+
+Frecuencia de muestreo: entre 250 Hz y 500 Hz, suficiente para capturar las componentes relevantes del ECG.
+
+Duración del registro: aproximadamente 5 minutos, en estado de reposo.
+
+2. Procedimiento experimental
+
+# Preparación del sujeto:
+
+Se limpió la piel con alcohol isopropílico para reducir la impedancia.
+
+Se colocaron los electrodos en las posiciones anatómicas correspondientes.
+
+Se solicitó al sujeto permanecer sentado, relajado y sin hablar durante el registro.
+
+# Configuración del sistema de adquisición:
+
+Se verificó la conexión de los cables y la polaridad de los electrodos.
+
+Se seleccionó la frecuencia de muestreo y el canal de entrada.
+
+Se inició la captura continua de la señal ECG por un periodo de 5 minutos.
+
+ # Registro de la señal:
+
+Se almacenaron los valores del voltaje en función del tiempo en un archivo para su posterior procesamiento digital.
+
+3. Consideraciones de calidad de señal
+
+Para garantizar una señal ECG confiable y de buena calidad se tuvieron en cuenta las siguientes precauciones:
+
+Utilizar electrodos bien adheridos y cables de baja impedancia.
+
+Mantener un entorno sin movimiento y con mínimas interferencias eléctricas.
+
+Asegurar una correcta referencia a tierra del sistema de adquisición.
+
+Verificar que no existan pérdidas de conexión o ruido por mala colocación de los electrodos.
+
+4. Resultado esperado de la adquisición
+
+El resultado fue una señal ECG con complejos P-QRS-T claramente visibles, lo que permitió aplicar posteriormente el proceso de filtrado digital y la detección de picos R para calcular los intervalos R-R y analizar la HRV.
+
+Se evitó la proximidad de fuentes de ruido electromagnético (celulares, monitores, cables de corriente).
+
+<img width="358" height="356" alt="image" src="https://github.com/user-attachments/assets/6c3ababc-1268-4077-b8ed-0a32175046b7" />
+
+<img width="365" height="645" alt="image" src="https://github.com/user-attachments/assets/7484a5ef-f936-40e2-979d-6ba0a00c5816" />
+
+<img width="243" height="177" alt="image" src="https://github.com/user-attachments/assets/9731ac26-1883-4908-804c-07ae5483e291" />
+
+## Diagrama de flujo
+
+![image](https://github.com/user-attachments/assets/4580bdea-f575-46fa-8ea0-8af3424bc487)
+
+
 
 
 
