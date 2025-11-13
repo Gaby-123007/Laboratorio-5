@@ -109,9 +109,9 @@ El resultado fue una señal ECG con complejos P-QRS-T claramente visibles, lo qu
 
 Se evitó la proximidad de fuentes de ruido electromagnético (celulares, monitores, cables de corriente).
 
-<img width="358" height="356" alt="image" src="https://github.com/user-attachments/assets/6c3ababc-1268-4077-b8ed-0a32175046b7" />
-
 <img width="365" height="645" alt="image" src="https://github.com/user-attachments/assets/7484a5ef-f936-40e2-979d-6ba0a00c5816" />
+
+<img width="358" height="356" alt="image" src="https://github.com/user-attachments/assets/6c3ababc-1268-4077-b8ed-0a32175046b7" />
 
 <img width="243" height="177" alt="image" src="https://github.com/user-attachments/assets/9731ac26-1883-4908-804c-07ae5483e291" />
 
