@@ -171,6 +171,8 @@ RR interpolado para análisis de frecuencia
 
 # Resultados e interpretación 
 
+<img width="1919" height="1018" alt="image" src="https://github.com/user-attachments/assets/e427a328-be0f-4d40-b088-8b9321215251" />
+
 4. Análisis de la Variabilidad de la Frecuencia Cardíaca (HRV)
 
 A partir de la detección de los picos R en la señal ECG filtrada, se calcularon los intervalos R–R (RR), los cuales representan el tiempo entre latidos consecutivos.
@@ -179,4 +181,16 @@ Estos intervalos permiten analizar la variabilidad de la frecuencia cardíaca (H
 La media de los intervalos RR refleja el ritmo basal del corazón, mientras que la desviación estándar (SDNN) indica el grado de variabilidad de los latidos.
 En la gráfica de intervalos RR (serie verde), se observa una modulación suave y periódica que corresponde a una actividad autonómica normal.
 La serie interpolada (línea roja discontinua) conserva la tendencia de la señal original, validando el proceso de interpolación empleado.
+
+<img width="651" height="229" alt="image" src="https://github.com/user-attachments/assets/81fa6c33-48c8-4107-8a75-7604c36862b1" />
+
+<img width="476" height="160" alt="image" src="https://github.com/user-attachments/assets/44c6d1ac-52f9-4737-a7a2-3305e1a7a76a" />
+
+5. Análisis en el Dominio Tiempo-Frecuencia (Transformada Wavelet)
+   
+<img width="872" height="528" alt="image" src="https://github.com/user-attachments/assets/e7a2ad49-9808-407b-8b73-a2257204bb49" />
+
+La Transformada Wavelet se aplicó a la serie de intervalos R–R interpolada para analizar la variabilidad de la frecuencia cardiaca en el dominio tiempo-frecuencia. Esta herramienta permite observar cómo cambian las componentes de baja frecuencia (LF: 0.04–0.15 Hz), asociadas a la actividad simpática, y las de alta frecuencia (HF: 0.15–0.4 Hz), relacionadas con la modulación parasimpática.
+En el espectrograma se aprecia mayor potencia en la banda LF, lo que indica una ligera predominancia simpática, mientras que las componentes HF reflejan la influencia respiratoria normal. La relación LF/HF ≈ 1.6 sugiere un equilibrio autonómico estable, mostrando que la Transformada Wavelet describe de forma efectiva las variaciones dinámicas del sistema nervioso autónomo a lo largo del tiempo.
+
 
